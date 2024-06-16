@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="text-content">Expense Tracker</h1>
+  <div class="Container">
+    <h3 class="text-content">YOUR BALANCE</h3>
+    <h1 id="balance" class="text-content">$0.00</h1>
+    <div class= sub-container>
+      <div>
+        <h3 class="text-content">INCOME</h3>
+        <p id="income-money">$0.00</p>
+      </div>
+      <div>
+        <h3 class="text-content">EXPENSE</h3>
+        <p id="expense-money">$0.00</p>
+      </div>
+    </div>
+    <h2 class="text-content">History</h2>
+    <ul id="transcationList" class="transcationList">
+      <li class="positive">
+        cash<span>+400</span><button class=delete-btn>x</button>
+      </li>
+    </ul>
+    <hr>
+    <h2 class="text-content">Add new transaction</h2>
+    <hr>
+    <form id="form">
+      <div >
+        <label for="text-box" class="text-content">Text</label><br><br>
+        <input id="text-box" type="text" placeholder="Enter Text..."/><br><br>
+      </div>
+      <div  >
+        <label for="amount-box" class="text-content">Amount<br>(negative-expense,positive-income)</label><br><br>
+        <input id="amount-box" type="number" placeholder="Enter amount..."/><br><br>
+      </div>
+      <div class="btn">
+        <button class="btn" onclick="updateValues()">Add transaction</button>
+      </div>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
